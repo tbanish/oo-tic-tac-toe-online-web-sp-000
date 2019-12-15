@@ -99,7 +99,7 @@ end
 
 def draw?
   if !won?(@board) && full?(@board)
-    return true
+    true
   end
 end
 
