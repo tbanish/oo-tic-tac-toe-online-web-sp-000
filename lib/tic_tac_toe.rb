@@ -77,7 +77,7 @@ def turn
   index = input_to_index(user_input)
   char = current_player
   if valid_move?(index) == true
-    move(user_input, char)
+    move(index, char)
     display_board
   else
     turn
