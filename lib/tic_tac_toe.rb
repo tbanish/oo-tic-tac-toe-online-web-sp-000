@@ -61,11 +61,9 @@ def turn_count
   return number_of_turns
 end
 
-
 def current_player
   turn_count.even? ? "X" : "O"
 end
-
 
 def turn
   puts "Please enter 1-9:"
@@ -80,7 +78,6 @@ def turn
   end
 end
 
-
 def won?
 	WIN_COMBINATIONS.each do |win_combo| 
 		if (@board[win_combo[0]]) == "X" && (@board[win_combo[1]]) == "X" && (@board[win_combo[2]]) == "X" 
@@ -92,14 +89,14 @@ def won?
 	false
 end	
 
-# #full?
-# def full?(board)
-#   if board.include?(" ") || board.include?("")
-#     return false
-#   else
-#     return true
-#   end
-# end
+#full?
+def full?(board)
+  if board.include?(" ") || board.include?("")
+    return false
+  else
+    return true
+  end
+end
 
 # #draw?
 # def draw?(board)
