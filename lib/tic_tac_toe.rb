@@ -34,8 +34,8 @@ def input_to_index(user_input)
 end
 
 
-def move(board, user_input, char)
-  @board[user_input] = char
+def move(position, char)
+  @board[position] = char
 end
 
 
