@@ -55,22 +55,6 @@ def valid_move?(position)
 end
 
 
-# def turn
-#   puts "Please enter 1-9:"
-#   user_input = gets.strip
-#   user_input = input_to_index(user_input)
-#   char = current_player(@board)
-#   until valid_move?(board, user_input) == true
-#       turn(board)
-#       break
-#     end
-#   if valid_move?(board, user_input)
-#     move(board, user_input, char)
-#     display_board(board)
-#   end
-# end
-
-
 def turn_count
   number_of_turns = 0
   @board.each do |token|
@@ -84,6 +68,22 @@ end
 
 def current_player
   turn_count.even? ? "X" : "O"
+end
+
+
+def turn
+  puts "Please enter 1-9:"
+  user_input = gets.strip
+  user_input = input_to_index(user_input)
+  char = current_player(@board)
+  until valid_move?(board, user_input) == true
+      turn(board)
+      break
+    end
+  if valid_move?(board, user_input)
+    move(board, user_input, char)
+    display_board(board)
+  end
 end
 
 
