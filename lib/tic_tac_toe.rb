@@ -79,7 +79,8 @@ def turn
       move(user_input, char)
       display_board
       
-  else valid_move?(user_input)
+  else
+    turn
     
     
   end
