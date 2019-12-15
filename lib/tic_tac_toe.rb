@@ -38,6 +38,14 @@ def move(position, char)
   @board[position] = char
 end
 
+def position_taken?(position)
+  if @board[position] == " " || @board[position] == "" || @board[position]== nil
+    false
+  else @board[position] == "X" || "O"
+    true
+  end
+end
+
 
   
 end
