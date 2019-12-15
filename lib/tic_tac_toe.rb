@@ -103,10 +103,9 @@ def draw?
   end
 end
 
-#game over?
-def over?(board)
-  if won?(board) || draw?(board) || full?(board)
-    return true
+def over?
+  if won? || draw? || full?
+     true
   else
     return false
   end
