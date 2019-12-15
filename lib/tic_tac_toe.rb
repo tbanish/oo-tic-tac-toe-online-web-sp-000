@@ -111,12 +111,11 @@ def over?
   end
 end
 
-#who won?
-def winner(board)
+def winner
   WIN_COMBINATIONS.each do |win_combo|
-    if (board[win_combo[0]]) == "X" && (board[win_combo[1]]) == "X" && (board[win_combo[2]]) == "X" 
+    if (@board[win_combo[0]]) == "X" && (@board[win_combo[1]]) == "X" && (@board[win_combo[2]]) == "X" 
 			return "X"
-		elsif (board[win_combo[0]]) == "O" && (board[win_combo[1]]) == "O" && (board[win_combo[2]]) == "O" 
+		elsif (@board[win_combo[0]]) == "O" && (@board[win_combo[1]]) == "O" && (@board[win_combo[2]]) == "O" 
 			return "O"
 		end
 	end
