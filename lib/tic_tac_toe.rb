@@ -81,9 +81,9 @@ end
 def won?
 	WIN_COMBINATIONS.each do |win_combo| 
 		if (@board[win_combo[0]]) == "X" && (@board[win_combo[1]]) == "X" && (@board[win_combo[2]]) == "X" 
-			return win_combo 
+		  win_combo 
 		elsif (@board[win_combo[0]]) == "O" && (@board[win_combo[1]]) == "O" && (@board[win_combo[2]]) == "O" 
-			return win_combo
+		  win_combo
 		end
 	end
 	false
@@ -91,9 +91,9 @@ end
 
 def full?
   if @board.include?(" ") || @board.include?("")
-    return false
+    false
   else
-    return true
+    true
   end
 end
 
@@ -105,9 +105,9 @@ end
 
 def over?
   if won? || draw? || full?
-     true
+    true
   else
-    return false
+    false
   end
 end
 
