@@ -89,9 +89,8 @@ def won?
 	false
 end	
 
-#full?
-def full?(board)
-  if board.include?(" ") || board.include?("")
+def full?
+  if @board.include?(" ") || @board.include?("")
     return false
   else
     return true
