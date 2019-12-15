@@ -97,12 +97,12 @@ def full?
   end
 end
 
-# #draw?
-# def draw?(board)
-#   if !won?(board) && full?(board)
-#     return true
-#   end
-# end
+#draw?
+def draw?(board)
+  if !won?(board) && full?(board)
+    return true
+  end
+end
 
 # #game over?
 # def over?(board)
