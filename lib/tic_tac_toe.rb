@@ -1,7 +1,5 @@
 class TicTacToe
   
-  
-  
 WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -33,7 +31,6 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-
 def move(position, char)
   @board[position] = char
 end
@@ -53,7 +50,6 @@ def valid_move?(position)
     false
   end
 end
-
 
 def turn_count
   number_of_turns = 0
