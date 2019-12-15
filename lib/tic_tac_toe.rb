@@ -71,10 +71,9 @@ end
 # end
 
 
-#turn_count
-def turn_count(board)
+def turn_count
   number_of_turns = 0
-  board.each do |token|
+  @board.each do |token|
     if token == "X" || token == "O"
     number_of_turns += 1
     end
