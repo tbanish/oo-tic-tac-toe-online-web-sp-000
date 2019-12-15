@@ -47,9 +47,9 @@ def position_taken?(position)
 end
 
 def valid_move?(position)
-  if position_taken?(@board, position) == false && position.between?(0,8) == true
+  if position_taken?(position) == false && position.between?(0,8) == true
     true
-  else position_taken?(@board, position) == true
+  else position_taken?(position) == true
     false
   end
 end
