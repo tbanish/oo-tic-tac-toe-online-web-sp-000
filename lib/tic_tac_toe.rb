@@ -76,7 +76,7 @@ def turn
   user_input = gets.strip
   index = input_to_index(user_input)
   char = current_player
-  if valid_move?(user_input) == true
+  if valid_move?(index) == true
     move(user_input, char)
     display_board
   else
